@@ -43,6 +43,13 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.oracle.jdbc</groupId>
+      <artifactId>ojdbc11</artifactId>
+      <version>10.2.0.1.0</version>
+      <scope>system</scope>
+      <systemPath>c:\Nova pasta2\DINo\DINo/lib/ojdbc11-23.2.0.0-javadoc.jar</systemPath>
+    </dependency>
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

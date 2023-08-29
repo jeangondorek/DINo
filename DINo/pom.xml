@@ -33,10 +33,10 @@
 		</dependency>
 		<dependency>
 		    <groupId>com.oracle.jdbc</groupId>
-   			<artifactId>ojdbc14</artifactId>
+   			<artifactId>ojdbc11</artifactId>
     		<version>10.2.0.1.0</version>
     		<scope>system</scope>
-		    <systemPath>${project.basedir}/lib/ojdbc14-10.2.0.1.0.jar</systemPath>
+		    <systemPath>${project.basedir}/lib/ojdbc11-23.2.0.0-javadoc.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.mongodb</groupId>

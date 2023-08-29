@@ -27,7 +27,6 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
-import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.ListSelectionModel;
@@ -237,7 +236,7 @@ public class MaindApp {
 		lblAvaliableSources.setBounds(338, 23, 126, 15);
 		panelServer.add(lblAvaliableSources);
 		
-		JRadioButton rdbtnPostgrresql = new JRadioButton("PostgrreSQL");
+		JRadioButton rdbtnPostgrresql = new JRadioButton("PostgresSQL");
 		buttonGroup.add(rdbtnPostgrresql);
 		rdbtnPostgrresql.setSelected(true);
 		rdbtnPostgrresql.setBounds(338, 46, 144, 23);
@@ -318,8 +317,11 @@ public class MaindApp {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					try {
+						e.printStackTrace();
+					} catch (Exception error) {
+						writeLog("[action] erro generico");
+					}
 				}
 
 			}
